@@ -1,0 +1,70 @@
+JDBC 
+
+why we have to use JDBC
+*Open Database Connectivity (ODBC)
+*Before JDBC, ODBC API was the database API to connect and execute the query with the database. But, ODBC API uses ODBC driver which is written in C language (i.e. platform dependent and unsecured). 
+*That is why Java has defined its own API (JDBC API) that uses JDBC drivers (written in Java language).
+---------------------
+JDBC
+*JDBC stands for Java Database Connectivity. JDBC is a Java API to connect and execute the query with the database.
+*JDBC API(API (Application programming interface) ) uses JDBC drivers to connect with the database
+*We can use JDBC API to access tabular data stored in any relational database. By the help of JDBC API, we can save, update, delete and fetch data from the database.
+---------------------
+JDBC Drivers
+JDBC Driver is a software component that enables java application to interact with the database.
+There are four types of JDBC drivers:
+	*JDBC-ODBC Bridge Driver,
+	*Native Driver,
+	*Network Protocol Driver
+	*Thin Driver
+	
+JDBC-ODBC Bridge Driver
+The JDBC-ODBC bridge driver uses ODBC driver to connect to the database. 
+The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls. 
+This is now discouraged because of thin driver.	
+In Java 8, the JDBC-ODBC Bridge has been removed.
+
+Native Driver
+The Native API driver uses the client-side libraries of the database.
+ The driver converts JDBC method calls into native calls of the database API. 
+It is not written entirely in java.
+
+
+Network Protocol Driver
+The Network Protocol driver uses middleware (application server) that converts JDBC calls directly or indirectly into the vendor-specific database protocol. 
+It is fully written in java.
+
+Thin Driver
+The thin driver converts JDBC calls directly into the vendor-specific database protocol. 
+That is why it is known as thin driver. It is fully written in Java language.
+No software is required at client side or server side.
+---------------------
+
+Steps to Connect Java Application with Database
+
+Below are the steps that explains how to connect to Database in Java:
+
+Step 1 – Import the Packages(The java.sql package contains interfaces and classes of JDBC API.)
+Step 2 – Load the drivers using the forName() method 
+Step 3 – Register the drivers using DriverManager 
+Step 4 – Establish a connection using the Connection class object
+Step 5 – Create a statement
+Step 6 – Execute the query
+Step 7 – Close the connections
+---------------------
+
+connection to postgresql
+
+* downloaded postgresql driver jar
+* load the postgresql jar or set the jar to classpath
+* example to load file https://mkyong.com/java/java-properties-file-examples/
+* Galaxy@123
+        URL ="jdbc:postgresql://localhost/students";
+		props.put("user", "postgres");
+		props.put("password", "Galaxy@123");
+		
+		complete titorial website
+		https://www.tutorialspoint.com/jdbc/index.htm
+
+
+
