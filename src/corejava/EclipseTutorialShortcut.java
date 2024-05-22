@@ -75,7 +75,26 @@ public class EclipseTutorialShortcut {
 		 code generation step
 		 alt+shift+s ->  getters and setters
 		 
+		 Save actions
+		 ctrl+shift+f -> format the code we have to do for each time
 		 
+		 search on save action and enable to format when you save anything
+		 
+		 Eclipse views
+		 call hirarcy of the methods -> it will gives all hiracy of the method
+		  window -> show view
+		  
+		  Eclipse perspective
+		  to understand project -> java browsing
+		  
+		  eclipse plugins
+		  help -> ABOUT eclipse iD -> installation
+		  
+		 
+		  
+		  
+		  
+		  
 		 
 		*
 		*/
