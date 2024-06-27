@@ -1,0 +1,35 @@
+What are Constructors in Java?
+In Java, a Constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method that is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.
+
+
+How Java Constructors are Different From Java Methods?
+Constructors must have the same name as the class within which it is defined it is not necessary for the method in Java.
+Constructors do not return any type while method(s) have the return type or void if does not return any value.
+Constructors are called only once at the time of Object creation while method(s) can be called any number of times
+
+
+Need of Constructor 
+So constructors are used to assign values to the class variables at the time of object creation, either explicitly done by the programmer or by Java itself (default constructor)
+
+
+Remember: Does constructor return any value?
+
+There are no “return value” statements in the constructor, but the constructor returns the current class instance.
+
+
+What is the Requiremnt for Creation of Constyructor During Object Creation in JAVA
+In Java, when you create an object using the new keyword, the constructor of the class is invoked. The requirements for the creation of a constructor during object creation in Java are as follows:
+Existence in the Class: Every class in Java must have at least one constructor. If you do not explicitly define any constructors in your class, Java provides a default constructor. If you define one or more constructors, then the default constructor provided by Java is not automatically generated unless you explicitly define it.
+Accessibility: The constructor must be accessible from the context in which the object is being created. There are three access modifiers in Java that control the accessibility of constructors:
+public: Accessible from any other class.
+protected: Accessible from subclasses (and classes in the same package).
+private: Accessible only from within the same class.
+Default (no modifier): Accessible only from within the same package.
+Parameters (if any): If you define parameterized constructors in your class, the arguments you pass during object creation must match one of the defined constructors' parameter lists. This ensures that the appropriate constructor is invoked.
+Invocation: The constructor is automatically invoked when an object is created using the new keyword,
+Optional Initialization: Constructors are typically used to initialize the newly created object. You can include initialization code inside the constructor to set initial values for instance variables or perform any necessary setup.
+
+
+Can we Create object Without Constructor in JAVA?
+NO, Without Constructor(Created Explicitly OR By Java Compiler) We Cannot Create an Object.
+Infer :  in Java, you can create objects without explicitly defining a constructor in your class. If you do not define any constructors, Java provides a default constructor for you automatically. This default constructor initializes the object to a default state, typically setting numeric fields to 0, boolean fields to false, object references to null, and so on.

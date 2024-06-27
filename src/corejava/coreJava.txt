@@ -5,7 +5,17 @@ push
 git push -u origin feature/coreJava
 
 Eclipse tutorial
-
-
 Eclipse tutorial
 https://github.com/in28minutes/EclipseIn28Minutes
+
+to change jdk in project
+If you want to change any jdk version of A specific project than you have to click ---> Project --> JRE System Library --> Properties ---> Inside Classpath Container (JRE System Library) change the Execution Environment to which ever version you want e.g. 1.7 or 1.8.
+
+Java Training
+
+JDK in Java
+https://www.geeksforgeeks.org/jdk-in-java/?ref=lbp
+
+How JVM Works – JVM Architecture?
+https://www.geeksforgeeks.org/jvm-works-jvm-architecture/?ref=lbp
+
