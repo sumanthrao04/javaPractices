@@ -1,3 +1,7 @@
+Constructors
+https://www.geeksforgeeks.org/constructors-in-java/
+
+
 What are Constructors in Java?
 In Java, a Constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method that is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.
 
@@ -33,3 +37,37 @@ Optional Initialization: Constructors are typically used to initialize the newly
 Can we Create object Without Constructor in JAVA?
 NO, Without Constructor(Created Explicitly OR By Java Compiler) We Cannot Create an Object.
 Infer :  in Java, you can create objects without explicitly defining a constructor in your class. If you do not define any constructors, Java provides a default constructor for you automatically. This default constructor initializes the object to a default state, typically setting numeric fields to 0, boolean fields to false, object references to null, and so on.
+
+
+constructor-chaining
+https://www.geeksforgeeks.org/constructor-chaining-java-examples/
+
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object. 
+
+Constructor chaining can be done in two ways: 
+Within same class: It can be done using this() keyword for constructors in the same class
+From base class: by using super() keyword to call the constructor from the base class.
+
+Concept
+Constructor chaining occurs through inheritance. A sub-class constructor’s task is to call super class’s constructor first. This ensures that the creation of sub class’s object starts with the initialization of the data members of the superclass. There could be any number of classes in the inheritance chain. Every constructor calls up the chain till the class at the top is reached.
+
+
+
+Rules of constructor chaining : 
+The this() expression should always be the first line of the constructor.
+There should be at-least be one constructor without the this() keyword (constructor 3 in above example).
+Constructor chaining can be achieved in any order.
+
+Constructor Chaining to other class using super() keyword :
+ Similar to constructor chaining in same class, super() should be the first line of the constructor as super class’s constructor are invoked before the sub class’s constructor
+ 
+ 
+ 
+ Alternative method : using Init block : 
+ When we want certain common resources to be executed with every constructor we can put the code in the init block. Init block is always executed before any constructor, whenever a constructor is used for creating a new object.
+ 
+
+
+
+
+
